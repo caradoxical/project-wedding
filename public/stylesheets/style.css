@@ -1,0 +1,214 @@
+/*
+ * Import nib
+ */
+/*
+ * Grab a custom font from Google
+ */
+@import url("http://fonts.googleapis.com/css?family=Quicksand");
+/*
+ * Nib provides a CSS reset
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+ * Store the main color and
+ * background color as variables
+ */
+body {
+  font-family: 'Georgia';
+  background-color: #faf9f0;
+  color: #444;
+}
+header {
+/*
+   * Note the use of the `main-color`
+   * variable and the `darken` function
+   */
+  background-color: #e3d8c4;
+  border-bottom: 1px solid #ba9f6e;
+  text-shadow: 0px -1px 0px #ba9f6e;
+}
+header .nav-bar,
+header a {
+  font-family: 'Sans';
+  font-size: 20px;
+  color: #57425c;
+  text-align: center;
+  -webkit-box-shadow: 0 8px 8px -6px #888;
+  box-shadow: 0 8px 8px -6px #888;
+  text-decoration: none;
+}
+header .nav-bar :hover,
+header a :hover {
+  background-color: #ebe4d6;
+}
+header .nav-bar .nav-item,
+header a .nav-item {
+  display: inline-block;
+  padding: 10px 10px;
+}
+header .title {
+  font-family: 'Riesling';
+  padding: 20px 10px;
+  color: #4e718d;
+  font-size: 75px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: block;
+}
+h1 {
+  clear: both;
+}
+h2 {
+  font-family: 'Parisish';
+  margin-top: -20px;
+  padding: 0px 10px;
+  color: #000;
+  font-size: 25px;
+  text-align: center;
+}
+.container {
+  width: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.main-content {
+  float: left;
+  width: 300px;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+.sidebar {
+  float: left;
+  width: 200px;
+}
+.sidebar .widget {
+/*
+     * Note the lack of vendor
+     * prefixes here. Nib will
+     * add them for us
+     */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  background-color: #faf9f0;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+}
+.sidebar .widget h1 {
+  font-family: 'Quicksand';
+  margin: 13px 10px 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+  margin-bottom: 10px;
+}
+.sidebar .widget p {
+  font-size: 13px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.8;
+}
+footer {
+  width: 500px;
+  margin: 50px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 13px;
+}

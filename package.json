@@ -1,0 +1,16 @@
+{
+  "name": "clark_hewins_wedding_website",
+  "description": "this is the wedding website for Seth Clark and Kateleigh Hewins",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.1.x",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
