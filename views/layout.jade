@@ -11,7 +11,9 @@ html
         a.nav-item(href='/event-information') Event Information
         a.nav-item(href='/registry') Registry
       h1
-        a.title(href='/') seth&kateleigh
+        mixin ampersand
+          span.highlight &
+        a.title(href='/') seth +ampersand() kateleigh
       h2 23 May 2015
     .container
       .main-content
