@@ -8,6 +8,15 @@
  */
 @import url('http://fonts.googleapis.com/css?family=Quicksand')
 
+@font-face
+  font-family 'riesling'
+  src url('/fonts/riesling.ttf') format('truetype')
+
+
+@font-face
+  font-family 'Parisish'
+  src url('/fonts/Parisish.ttf') format('truetype')
+
 /*
  * Nib provides a CSS reset
  */
@@ -36,6 +45,7 @@ header
     :hover
       background-color: lighten(main-color, 30%)
     .nav-item
+      box-shadow none
       display inline-block
       padding 10px 10px
   
@@ -48,6 +58,9 @@ header
     text-decoration none
     box-shadow none
     display block
+    .highlight
+      color #57425c
+      font-weight bold
 
   /*
    * Note the use of the `main-color`
