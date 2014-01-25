@@ -1,6 +1,6 @@
 extend layout
 block content
   div
-    form(action='/rsvp', method='post')
+    form(id='rsvp', name='passPhrase' method='post' action='getData')
       Registration Phrase: <input type='password' name='regPhrase'>
       <input type='submit' value='Submit'>
