@@ -40,16 +40,16 @@ app.get('/proposal', function (req, res) {
   );  
 });
 
-app.get('/wedding-party', function (req, res) {
-  res.render('wedding-party',
-    {title : 'Wedding-Party'}
-  );  
-});
-
 app.get('/event-information', function (req, res) {
   res.render('event-information',
     {title : 'Event-Information'}
   );
+});
+
+app.get('/RSVP', function (req, res) {
+  res.render('rsvp',
+    {title : 'RSVP'}
+  );  
 });
 
 app.get('/registry', function (req, res) {
