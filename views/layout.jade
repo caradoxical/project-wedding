@@ -1,22 +1,35 @@
 doctype html
-html
+html(lang='en-US')
   head
-    title Seth & Kateleigh
+    title Seth&Kateleigh's 2015 Wedding
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    header
-      .nav-bar
-        a.nav-item(href='/proposal') Proposal
-        a.nav-item(href='/event-information') Event Information
-        a.nav-item(href='/rsvp') RSVP
-        a.nav-item(href='/registry') Registry
-      h1
-        a.title(href='/') seth<span class='highlight'><b>&</b></span>kateleigh
-      .date 23 May 2015
-    .container
-      .main-content
-        block content
-      .sidebar
-        block sidebar
-    footer
-      p &copy sethandkateleigh.com
+  body(class=['home', 'page'])
+    div(class=['full-width', 'header'])
+      header.container
+        nav.site-nav
+          ul#menu-main-navigation.desktop
+            li#menu-item-1(class=['proposal', 'menu-item', 'menu-item-1'])
+              a(href='/proposal') Proposal
+            li#menu-item-2(class=['event', 'menu-item', 'menu-item-2'])
+              a(href='/event-information') Event Information
+            li#menu-item-3(class=['logo', 'menu-item', 'menu-item-3'])
+              a(href='/') Home
+            li#menu-item-4(class=['registry', 'menu-item', 'menu-item-4'])
+              a(href='/registry') Registry
+            li#menu-item-5(class=['rsvp', 'menu-item', 'menu-item-5'])
+              a(href='/rsvp') RSVP
+              
+    div(class=['full-width', 'tan'])
+      .container
+        .heading
+         h1 Seth & Kateleigh <small>23 May 2015</small> 
+      .container
+        .main-content
+          block content
+        .sidebar
+          block sidebar
+    div(class=['full-width', 'dark-grey', 'flat', 'footer'])
+      .container
+        .footer-foot
+          .info
+            p &copy sethandkateleigh.com
