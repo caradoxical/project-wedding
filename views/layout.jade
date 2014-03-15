@@ -1,8 +1,8 @@
 doctype html
 html(lang='en-US')
   head
-    title Seth&Kateleigh's 2015 Wedding
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title= title
+    link(rel='stylesheet', href='stylesheets/style.css')
   body(class=['home', 'page'])
     div(class=['full-width', 'header'])
       header.container
@@ -18,12 +18,13 @@ html(lang='en-US')
               a(href='/registry') Registry
             li#menu-item-5(class=['rsvp', 'menu-item', 'menu-item-5'])
               a(href='/rsvp') RSVP
-              
     div(class=['full-width', 'tan'])
       .container
         .heading
-         h1 Seth & Kateleigh <small>23 May 2015</small> 
-      .container
+         h1 Seth & Kateleigh
+           small 23 May 2015
+    div(class=['full-width', 'flush-bottom'])
+      div(class=['container', 'clearfix'])
         .main-content
           block content
         .sidebar
