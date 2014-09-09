@@ -3,6 +3,8 @@ html(lang='en-US')
   head
     title= title
     link(rel='stylesheet', href='stylesheets/style.css')
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src='js/_main.js')
   body(class=['home', 'page'])
     div(class=['full-width', 'header'])
       header.container
@@ -13,7 +15,7 @@ html(lang='en-US')
             li#menu-item-2(class=['event', 'menu-item', 'menu-item-2'])
               a(href='/event-information') Event Information
             li#menu-item-3(class=['logo', 'menu-item', 'menu-item-3'])
-              a(href='/') Home
+              a(onclick='testJQuery()') Home
             li#menu-item-4(class=['registry', 'menu-item', 'menu-item-4'])
               a(href='/registry') Registry
             li#menu-item-5(class=['rsvp', 'menu-item', 'menu-item-5'])
@@ -21,14 +23,12 @@ html(lang='en-US')
     div(class=['full-width', 'tan'])
       .container
         .heading
-         h1 Seth & Kateleigh
-           small 23 May 2015
+          h1 Seth & Kateleigh
+            small 23 May 2015
     div(class=['full-width', 'flush-bottom'])
       div(class=['container', 'clearfix'])
         .main-content
           block content
-        .sidebar
-          block sidebar
     div(class=['full-width', 'dark-grey', 'flat', 'footer'])
       .container
         .footer-foot
