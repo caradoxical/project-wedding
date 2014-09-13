@@ -1,6 +1,6 @@
 #project-wedding
 
-*Wedding website for Seth &amp; Kateleigh*
+:heart: *Wedding website for Seth &amp; Kateleigh* :heart:
 
 My first node.js project!
 
