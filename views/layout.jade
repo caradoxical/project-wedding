@@ -4,7 +4,6 @@ html(lang='en-US')
     title= title
     link(rel='stylesheet', href='stylesheets/style.css')
     script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-    script(src='js/_main.js')
   body(class=['home', 'page'])
     div(class=['full-width', 'header'])
       header.container
@@ -27,10 +26,26 @@ html(lang='en-US')
             small 23 May 2015
     div(class=['full-width', 'flush-bottom'])
       div(class=['container', 'clearfix'])
-        .main-content
-          block content
+        .wedding-party
+          ul(class=['wedding-party', 'left'])
+            li Laura Fahey
+            li Jennifer Bennett
+            li Lauren Kuntz
+            li Braxton Bragg
+            li Bryan Hewins
+          ul(class=['wedding-party', 'right'])
+            li Sean Mellott
+            li Ricky Diaz
+            li Tim Pennington
+            li Santiago Pikula
+            li Brian Sparling
     div(class=['full-width', 'dark-grey', 'flat', 'footer'])
       .container
         .footer-foot
           .info
             p &copy sethandkateleigh.com
+    script(src='js/enquire.min.js')
+    script(src='js/skrollr.min.js')
+    script
+      var s = skrollr.init();
+    script(src='js/_main.js')
