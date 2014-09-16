@@ -1,51 +1,45 @@
 doctype html
 html(lang='en-US')
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     title= title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
     link(rel='stylesheet', href='stylesheets/style.css')
+  body.loading
+            
+    header.entry-header
+      .inner
+        h1.entry-title Seth & Kateleigh's Wedding
+        small 23 May 2015
+    main
+      section#slide-1(class=['homeSlide'])
+        .bcg(data-center='background-position: 50% 0px;',data-top-bottom='background-position: 50% -100px;',data-anchor-target='#slide-1')
+          .hsContainer
+            .hsContent(data-center='opacity: 1',data-106-top='opacity:0',data-anchor-target='#slide-1 h2')
+              h2 The Proposal
+              p Awesome proposal story...
+      section#slide-2
+        .bcg(data-0='background-color:rgb(1,27,59);', data-top='background-color:(0,0,0);', data-anchor-target='#slide-2')
+          .hsContainer
+            .hsContent
+              .plaxEl(data-106-top='opacity: 0',data--30p-top='opacity: 1;',data--60p-top='opacity: 0;',data-bottom='opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;',data-anchor-target='#slide-3')
+                .wedding-party
+                  ul(class=['wedding-party', 'left'])
+                      li Laura Fahey
+                      li Jennifer Bennett
+                      li Lauren Kuntz
+                      li Braxton Bragg
+                      li Bryan Hewins
+                  ul(class=['wedding-party', 'right'])
+                      li Sean Mellott
+                      li Ricky Diaz
+                      li Tim Pennington
+                      li Santiago Pikula
+                      li Brian Sparling
     script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-  body(class=['home', 'page'])
-    div(class=['full-width', 'header'])
-      header.container
-        nav.site-nav
-          ul#menu-main-navigation.desktop
-            li#menu-item-1(class=['proposal', 'menu-item', 'menu-item-1'])
-              a(href='/proposal') Proposal
-            li#menu-item-2(class=['event', 'menu-item', 'menu-item-2'])
-              a(href='/event-information') Event Information
-            li#menu-item-3(class=['logo', 'menu-item', 'menu-item-3'])
-              a(onclick='testJQuery()') Home
-            li#menu-item-4(class=['registry', 'menu-item', 'menu-item-4'])
-              a(href='/registry') Registry
-            li#menu-item-5(class=['rsvp', 'menu-item', 'menu-item-5'])
-              a(href='/rsvp') RSVP
-    div(class=['full-width', 'tan'])
-      .container
-        .heading
-          h1 Seth & Kateleigh
-            small 23 May 2015
-    div(class=['full-width', 'flush-bottom'])
-      div(class=['container', 'clearfix'])
-        .wedding-party
-          ul(class=['wedding-party', 'left'])
-            li Laura Fahey
-            li Jennifer Bennett
-            li Lauren Kuntz
-            li Braxton Bragg
-            li Bryan Hewins
-          ul(class=['wedding-party', 'right'])
-            li Sean Mellott
-            li Ricky Diaz
-            li Tim Pennington
-            li Santiago Pikula
-            li Brian Sparling
-    div(class=['full-width', 'dark-grey', 'flat', 'footer'])
-      .container
-        .footer-foot
-          .info
-            p &copy sethandkateleigh.com
-    script(src='js/enquire.min.js')
-    script(src='js/skrollr.min.js')
-    script
-      var s = skrollr.init();
-    script(src='js/_main.js')
+    script(src="js/enquire.min.js")
+    script(src="js/imagesloaded.js")
+    script(src="js/skrollr.min.js")
+    script(src="js/_main.js")
